@@ -1,5 +1,5 @@
 // Importing necessary packages
-import 'package:bmi_calculator/palette.dart'; // Importing the Palette class for color constants
+import 'package:myapp/palette.dart'; // Importing the Palette class for color constants
 import 'package:flutter/material.dart'; // Importing Flutter's material design library
 
 import '../body_model.dart'; // Importing the BodyModel class for sex enumeration
