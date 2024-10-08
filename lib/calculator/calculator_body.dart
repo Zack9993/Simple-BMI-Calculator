@@ -1,12 +1,12 @@
 // Importing necessary packages and modules
-import 'package:bmi_calculator/calculator/calculate_button.dart'; // Importing the CalculateButton widget
+import 'package:myapp/calculator/calculate_button.dart'; // Importing the CalculateButton widget
 import 'package:flutter/material.dart'; // Importing Flutter's material design library
-import 'package:bmi_calculator/calculator/height_widget.dart'; // Importing the HeightWidget for height input
-import 'package:bmi_calculator/calculator/int_picker_widget.dart'; // Importing the IntPickerWidget for integer inputs
-import 'package:bmi_calculator/calculator/sex_widget.dart'; // Importing the SexWidget for gender selection
-import 'package:bmi_calculator/result/result_page.dart'; // Importing the ResultPage to display results
-import 'package:bmi_calculator/body_model.dart'; // Importing the BodyModel class to hold user data
-import 'package:bmi_calculator/palette.dart'; // Importing the Palette class for color constants
+import 'package:myapp/calculator/height_widget.dart'; // Importing the HeightWidget for height input
+import 'package:myapp/calculator/int_picker_widget.dart'; // Importing the IntPickerWidget for integer inputs
+import 'package:myapp/calculator/sex_widget.dart'; // Importing the SexWidget for gender selection
+import 'package:myapp/results/results_page.dart'; // Importing the ResultPage to display results
+import 'package:myapp/body_model.dart'; // Importing the BodyModel class to hold user data
+import 'package:myapp/palette.dart'; // Importing the Palette class for color constants
 
 // A stateful widget that represents the body of the BMI calculator
 class CalculatorBody extends StatefulWidget {
