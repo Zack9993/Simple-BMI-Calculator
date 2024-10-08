@@ -1,7 +1,8 @@
 // Importing necessary packages
 import 'package:bmi_calculator/calculator/calculator_page.dart'; // Importing the CalculatorPage widget from the BMI calculator package
 import 'package:flutter/material.dart'; // Importing Flutter's material design library for UI components
-import 'package:flutter/services.dart'; // Importing Flutter services to control system-level features
+import 'package:flutter/services.dart';
+import 'package:myapp/calculator/calculator_page.dart'; // Importing Flutter services to control system-level features
 
 // The main function is the entry point of the Flutter application
 void main() {
