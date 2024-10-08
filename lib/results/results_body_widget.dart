@@ -1,10 +1,9 @@
 // Importing the Flutter material design library for UI components
 import 'package:flutter/material.dart';
-
 // Importing the Palette class for color constants
 import '../palette.dart';
 // Importing the ResultContentWidget to display the result content
-import 'result_content_widget.dart';
+import 'package:myapp/results/results_content_widget.dart';
 
 // A stateless widget that represents the body of the result screen
 class ResultBodyWidget extends StatelessWidget {

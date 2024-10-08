@@ -1,7 +1,7 @@
 // Importing necessary packages and modules
-import 'package:bmi_calculator/body_model.dart'; // Importing the BodyModel class
-import 'package:bmi_calculator/palette.dart'; // Importing the Palette class for color constants
-import 'package:bmi_calculator/result/result_body_widget.dart'; // Importing the ResultBodyWidget to display the result
+import 'package:myapp/body_model.dart'; // Importing the BodyModel class
+import 'package:myapp/palette.dart'; // Importing the Palette class for color constants
+import 'package:myapp/results/results_body_widget.dart'; // Importing the ResultBodyWidget to display the result
 import 'package:flutter/material.dart'; // Importing Flutter's material design library
 
 import '../bmi_calculator.dart'; // Importing the main BMI calculation function
