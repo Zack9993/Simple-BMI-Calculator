@@ -1,8 +1,8 @@
 // Importing necessary packages and modules
-import 'package:bmi_calculator/calculator/calculator_body.dart'; // Importing the CalculatorBody widget
+import 'package:myapp/calculator/calculator_body.dart'; // Importing the CalculatorBody widget
 import 'package:flutter/material.dart'; // Importing Flutter's material design library
-import 'package:bmi_calculator/body_model.dart'; // Importing the BodyModel class to hold user data
-import 'package:bmi_calculator/palette.dart'; // Importing the Palette class for color constants
+import 'package:myapp/body_model.dart'; // Importing the BodyModel class to hold user data
+import 'package:myapp/palette.dart'; // Importing the Palette class for color constants
 
 // A stateless widget that represents the calculator page of the BMI calculator
 class CalculatorPage extends StatelessWidget {
