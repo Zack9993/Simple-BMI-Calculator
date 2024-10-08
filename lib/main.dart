@@ -1,8 +1,7 @@
 // Importing necessary packages
-import 'package:bmi_calculator/calculator/calculator_page.dart'; // Importing the CalculatorPage widget from the BMI calculator package
+import 'package:myapp/calculator/calculator_page.dart'; // Importing the CalculatorPage widget from the BMI calculator package
 import 'package:flutter/material.dart'; // Importing Flutter's material design library for UI components
-import 'package:flutter/services.dart';
-import 'package:myapp/calculator/calculator_page.dart'; // Importing Flutter services to control system-level features
+import 'package:flutter/services.dart'; // Importing Flutter services to control system-level features
 
 // The main function is the entry point of the Flutter application
 void main() {
@@ -30,9 +29,12 @@ class MyApp extends StatelessWidget {
       title: 'BMI Calculator', // Sets the title of the application
       theme: ThemeData(
         primarySwatch: Colors.blue, // Sets the primary color theme to blue
-        visualDensity: VisualDensity.adaptivePlatformDensity, // Adjusts the visual density based on the platform
+        visualDensity: VisualDensity
+            .adaptivePlatformDensity, // Adjusts the visual density based on the platform
       ),
-      home: CalculatorPage(title: 'BMI CALCULATOR'), // Sets the home page of the app to CalculatorPage with a title
+      home: CalculatorPage(
+          title:
+              'BMI CALCULATOR'), // Sets the home page of the app to CalculatorPage with a title
     );
   }
 }
