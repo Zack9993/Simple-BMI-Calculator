@@ -1,3 +1,7 @@
+import 'dart:math';
+
+import 'package:myapp/body_model.dart';
+
 double calculateBMI({required BodyModel bodyModel}) {
   // Validate height and weight
   if (bodyModel.height <= 0 || bodyModel.weight <= 0) {
