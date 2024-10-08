@@ -1,13 +1,21 @@
-// Importing the Dart math library for mathematical functions
-import 'dart:math';
+// Enumeration for gender selection
+enum Sex {
+  male, // Represents male gender
+  female, // Represents female gender
+}
 
-// Importing the BodyModel class to access user body data
-import 'package:bmi_calculator/body_model.dart';
+// User body model class to hold user data for BMI calculation
+class BodyModel {
+  Sex sex; // The user's gender
+  int height; // The user's height in centimeters
+  int weight; // The user's weight in kilograms
+  int age; // The user's age in years
 
-// Function to calculate the Body Mass Index (BMI)
-// It takes a BodyModel object as a required parameter
-double calculateBMI({required BodyModel bodyModel}) {
-  // BMI formula: weight (kg) / (height (m) ^ 2)
-  // The height is converted from centimeters to meters by dividing by 100
-  return (bodyModel.weight) / pow(bodyModel.height / 100, 2);
+  // Constructor for the BodyModel class
+  BodyModel({
+    required this.sex, // Required parameter for gender
+    required this.height, // Required parameter for height
+    required this.weight, // Required parameter for weight
+    required this.age, // Required parameter for age
+  });
 }
