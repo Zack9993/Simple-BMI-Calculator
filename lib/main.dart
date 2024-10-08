@@ -1,71 +1,37 @@
-import 'package:flutter/material.dart';
+// Importing necessary packages
+import 'package:bmi_calculator/calculator/calculator_page.dart'; // Importing the CalculatorPage widget from the BMI calculator package
+import 'package:flutter/material.dart'; // Importing Flutter's material design library for UI components
+import 'package:flutter/services.dart'; // Importing Flutter services to control system-level features
 
+// The main function is the entry point of the Flutter application
 void main() {
+  // Ensures that the Flutter engine is initialized before running the app
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Prevents the app from being displayed in landscape orientation
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp, // Only allows portrait mode
+  ]);
+
+  // Runs the MyApp widget, which is the root of the application
   runApp(const MyApp());
 }
 
+// MyApp is a stateless widget that serves as the root of the application
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  // Constructor for MyApp, allowing for optional key parameter
+  const MyApp({Key? key}) : super(key: key);
 
+  // The build method describes the part of the user interface represented by this widget
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'BMI Calculator', // Sets the title of the application
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        primarySwatch: Colors.blue, // Sets the primary color theme to blue
+        visualDensity: VisualDensity.adaptivePlatformDensity, // Adjusts the visual density based on the platform
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    // than having to individually change instances of widgets.
-    return Scaffold(
-      appBar: AppBar(
-        // change color while the other colors stay the same.
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      home: CalculatorPage(title: 'BMI CALCULATOR'), // Sets the home page of the app to CalculatorPage with a title
     );
   }
 }
